@@ -361,7 +361,7 @@ background-color: var(--ocean);
 
 
 .customers{
-    padding: 120px 0;
+    padding: 96px 0;
 }
 .customers-title {
     color: var(--navy-blue);
@@ -377,16 +377,16 @@ background-color: var(--ocean);
 }
 .customers-list {
     display: flex;
+    flex-wrap: wrap;
+    gap: 72px 16px;
     align-items: center;
-    justify-content: center;
-    gap: 24px;
+    justify-content: center ;
 }
 .customers-item {
-    width: 168px;
-    height: 88px;
-    display: flex;
-        align-items: center;
-        justify-content: center;
+    /* width: 168px;
+    height: 88px; */
+    width: 100%;
+    width: calc((100% - 16px) / 2);
 }
 .customers-link{
     width: 100%;
@@ -414,11 +414,12 @@ background-color: var(--ocean);
 }
 
 
-/*-----------footer----------------------------------------------------------------*/
+/*-----------Footer----------------------------------------------------------------*/
 .footer {
     background-color: var(--navy-blue);
-    padding: 100px 0;
-    display: flex;
+    padding: 96px 0;
+    /* padding: 100px 0;
+    display: flex; */
 }
 .container-footer{
     display: flex;
