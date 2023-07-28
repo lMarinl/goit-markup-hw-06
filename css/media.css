@@ -7,9 +7,85 @@
 
 
 @media screen and (min-width: 768px) {  /*--------------------------------------*/
-    .container{
-        max-width: 766px;
-    } 
+.container{
+    max-width: 766px;
+} 
+
+/*-----------------header---------------------*/
+
+.footer-link-logo{
+    /* margin-right: 76px; */
+}
+.main-nav {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    
+}
+.main-item {
+    padding: 24px 0;
+}
+.main-nav-list {
+    display: flex;
+    gap: 40px;
+}
+
+.main-link {
+    color: var(--navy-blue);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 24px 0;
+}
+
+.main-link:hover,
+.main-link:focus,
+.main-link:active {
+    color: var(--ocean);
+}
+
+.current {
+    position: relative;
+    color: var(--ocean);
+    ;
+}
+
+.current::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--ocean);
+}
+.main-contacts {
+    font-style: normal;
+}
+
+.main-contacts-list {
+    display: flex;
+    gap: 40px;
+    margin-left: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+.main-contacts-link {
+    color: var(--slate);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.main-contacts-link:hover,
+.main-contacts-link:focus {
+    color: var(--ocean);
+}
 
 /*---------------Section-one------------------*/
 .section-one{
