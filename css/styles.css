@@ -7,7 +7,7 @@
     --ocean: #404BBF;
     --cloud:#F4F4FD;
     --light-slate: #8E8F99;
-    --navyblue-modal: rgba(46, 47, 66, 0.40);
+    --navy-blue-modal: rgba(46, 47, 66, 0.40);
 }
 
 body{
@@ -170,31 +170,39 @@ outline: 2px solid red;
 .section-one {
     max-width: 1440px;
     margin: 0 auto;
-    background-color:var(--navy-blue);
-    background-image: linear-gradient(
-    180deg,
-    rgba(46, 47, 66, 0.70),
-    rgba(46, 47, 66, 0.70)
-    ),
-    url(../images/people-office.jpg);
+    /* background-color: var(--navy-blue); */
+    background-image: linear-gradient(180deg,
+                rgba(46, 47, 66, 0.70),
+                rgba(46, 47, 66, 0.70)),
+            url(../images/people-office-mod.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding: 188px 0;
+    padding: 112px 0;
 }
 
 
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx){
+        .section-one{
+        background-image: linear-gradient(180deg,
+                rgba(46, 47, 66, 0.70),
+                rgba(46, 47, 66, 0.70)),
+        url(../images/people-mod-2x.jpg);
+        }
+    }
 
 .section-one-title {
     color: var(--white);
     text-align: center;
-        font-size: 56px;
+        font-size: 36px;
         font-weight: 700;
-        line-height:1.07;
-        letter-spacing: 0.02em;
-        max-width: 496px;
+        line-height: 1.11;
+        letter-spacing: 0.02em; 
+        max-width: 320px;
         margin: 0 auto;
-        margin-bottom: 48px;
+        margin-bottom: 72px;
 }
 
 .section-one-btn {
@@ -1033,7 +1041,7 @@ background-color: var(--ocean);
 .input-modal { 
     width: 100%;
     height: 40px;
-    border: 1px solid var(--navyblue-modal);
+    border: 1px solid var(--navy-blue-modal);
     border-radius: 4px;
     background-color: transparent;
     outline: transparent;
@@ -1064,8 +1072,8 @@ background-color: var(--ocean);
     width: 100%;
     height: 120px;
     padding: 8px 16px;
-    color: var(--navyblue-modal);
-    border: 1px solid var(--navyblue-modal);
+    color: var(--navy-blue-modal);
+    border: 1px solid var(--navy-blue-modal);
     border-radius: 4px;
     outline: transparent;
     background-color: transparent;
@@ -1099,7 +1107,7 @@ background-color: var(--ocean);
     justify-content: center;
     width: 16px;
     height: 16px;
-    border: 1px solid var(--navyblue-modal);
+    border: 1px solid var(--navy-blue-modal);
     border-radius: 2px;
     margin-right: 8px;
     fill: transparent;
