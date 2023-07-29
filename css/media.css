@@ -1,11 +1,19 @@
 @media screen and (min-width: 428px) {
-    .container{
-        max-width: 426px;
-        
-    }  
+.container{
+    max-width: 426px;
+        }  
+
+.menu-socials-list{
+    justify-content: center;
+    gap: 56px;
 }
 
+.footer-social-list {
+    justify-content: center;
+    gap: 16px;
+}
 
+}
 @media screen and (min-width: 768px) {  /*--------------------------------------*/
 .container{
     max-width: 766px;
