@@ -7,7 +7,9 @@
     justify-content: center;
     gap: 56px;
 }
-
+.mob-contacts-link:is(:hover, :focus){
+    font-size: 36px;
+}
 .footer-social-list {
     justify-content: center;
     gap: 16px;
@@ -177,6 +179,7 @@
 }
 .footer-main-logo{
     margin-right: 24px;
+    margin-bottom: 72px;
 }
 .footer-social-text{
     text-align: start;
@@ -222,7 +225,9 @@
     flex-direction: row;
     gap: 40px;
 }
-
+.main-link-logo {
+    margin-right: 76px;
+}
 
 /*---------------Section-one------------------*/
 
@@ -345,6 +350,7 @@ display: flex;
 
 .footer-main-logo {
     margin-right: 120px;
+    margin-bottom: 0;
 }
 
 .footer-link-logo{
