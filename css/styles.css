@@ -1018,7 +1018,7 @@ background-color: var(--ocean);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    width: 392px;
+    width: 100%;
     min-height: 584px;
     background: #fcfcfc;
     border-radius: 4px;
