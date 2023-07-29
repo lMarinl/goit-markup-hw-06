@@ -55,16 +55,16 @@
             </li>
           </ul>
         </address>
-        <button class="header-btn-open" type="button">
-          <svg class="header-btn-icon" width="29" height="18">
-            <use href="./images/icons.svg#icon-burger"></use>
+        <button class="header-btn-open" type="button" data-menu-open>
+          <svg class="header-btn-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-menu-hamburger"></use>
           </svg>
         </button>
       </div>
-      <div class="mob-menu">
+      <div class="mob-menu is-hidden" data-menu>
         <div>
-          <button class="mob-menu-close" type="button">
-            <svg class="mob-btn-icon" width="29" height="18">
+          <button class="mob-menu-close" type="button" data-menu-close>
+            <svg class="mob-btn-icon" width="8" height="8">
               <use href="./images/icons.svg#icon-close-black"></use>
             </svg>
           </button>
@@ -724,5 +724,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mob-menu.js"></script>
   </body>
 </html>
