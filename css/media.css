@@ -2,7 +2,22 @@
 .container{
     max-width: 426px;
         }  
-
+.section-one {
+    background-image: linear-gradient(180deg,
+            rgba(46, 47, 66, 0.70),
+            rgba(46, 47, 66, 0.70)),
+        url(../images/people-office-tab.jpg);
+}
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                .section-one {
+                    background-image: linear-gradient(180deg,
+                        rgba(46, 47, 66, 0.70),
+                        rgba(46, 47, 66, 0.70)),
+                        url(../images/people-tab-2x.jpg);
+                }
+            }
 .menu-socials-list{
     justify-content: center;
     gap: 56px;
@@ -10,10 +25,7 @@
 .mob-contacts-link:is(:hover, :focus){
     font-size: 36px;
 }
-.footer-social-list {
-    justify-content: center;
-    gap: 16px;
-}
+
 
 }
 @media screen and (min-width: 768px) {  /*--------------------------------------*/
@@ -86,7 +98,7 @@
 }
 .main-contacts-link {
     color: var(--slate);
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -102,22 +114,8 @@
 }
 
 /*---------------Section-one------------------*/
-.section-one{
-    background-image: linear-gradient(180deg,
-        rgba(46, 47, 66, 0.70),
-        rgba(46, 47, 66, 0.70)),
-        url(../images/people-office-tab.jpg);
-}
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        .section-one {
-        background-image: linear-gradient(180deg,
-                rgba(46, 47, 66, 0.70),
-                rgba(46, 47, 66, 0.70)),
-            url(../images/people-tab-2x.jpg);
-    }
-}
+
+
 .section-one-title {
     font-size: 56px;
     line-height: 1.07;
@@ -125,6 +123,28 @@
     margin-bottom: 36px;
 }
 
+.section-one {
+    padding: 188px 0;
+    background-image: linear-gradient(180deg,
+            rgba(46, 47, 66, 0.70),
+            rgba(46, 47, 66, 0.70)),
+        url(../images/people-office.jpg);
+}
+
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                .section-one {
+                    background-image: linear-gradient(180deg,
+                        rgba(46, 47, 66, 0.70),
+                        rgba(46, 47, 66, 0.70)),
+                    url(../images/people-office-2x.jpg);
+                }
+            }
+
+.section-one-title {
+    margin-bottom: 48px;
+}
 /*-----------------Description-----------------*/
 
 .description-list{
@@ -136,6 +156,7 @@
 
 .description-title{
     text-align: start;
+    font-size: 36px;
 }
 
 /*-----------------Team-----------------*/
@@ -171,15 +192,25 @@
 
 /*-------------------Footer---------------------*/
 
+
+
 .footer{
     padding: 97px 164px 96px 108px;
+}
+.container-footer{
+    max-width: 552px;
+}
+.footer-link-logo{
+    text-align: start;
 }
 .footer-tablet{
     display: flex;
 }
 .footer-main-logo{
     margin-right: 24px;
-    margin-bottom: 72px;
+}
+.container-social-media {
+    margin-bottom: 0;
 }
 .footer-social-text{
     text-align: start;
@@ -225,33 +256,14 @@
     flex-direction: row;
     gap: 40px;
 }
+.main-contacts-link {
+    font-size: 16px;
+}
 .main-link-logo {
     margin-right: 76px;
 }
 
-/*---------------Section-one------------------*/
 
-.section-one {
-    padding: 188px 0; 
-    background-image: linear-gradient(180deg,
-            rgba(46, 47, 66, 0.70),
-            rgba(46, 47, 66, 0.70)),
-            url(../images/people-office.jpg);
-}
-
-@media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-    .section-one {
-        background-image: linear-gradient(180deg,
-                rgba(46, 47, 66, 0.70),
-                rgba(46, 47, 66, 0.70)),
-            url(../images/people-office-2x.jpg);
-    }
-}
-.section-one-title{
-    margin-bottom: 48px;
-}
 
 /*-----------------Description-----------------*/
 
@@ -270,7 +282,9 @@ display: flex;
     width: calc((100% - 72px) / 4);
 }
 
-
+.description-title {
+    font-size: 20px;
+}
 .description-container-icon {
     width: 264px;
     height: 112px;
@@ -354,13 +368,15 @@ display: flex;
 }
 
 .footer-link-logo{
-display: inline-block;
+
 margin-bottom: 16px; 
 }
 
 .container-social-media {
-    margin-bottom: 16px; 
     margin-right: 80px;
+}
+.footer-main-logo {
+    margin-bottom: 0;
 }
 
 .form-footer {
