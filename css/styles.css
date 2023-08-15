@@ -10,6 +10,28 @@
     --navy-blue-modal: rgba(46, 47, 66, 0.40);
 }
 
+#scrollToTopButton {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #0A224A;
+    color: white;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 50%;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}  
+.scrollToTopBtn:hover {
+    background-color: #061835;
+}
+.up{
+    fill: #E7E9FC;
+}
 body{
     font-family: Roboto, sans-serif;
     color: #434455;
