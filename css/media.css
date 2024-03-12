@@ -1,6 +1,6 @@
-@media screen and (min-width: 428px) {
+@media screen and (max-width: 767px) {
   .container {
-    max-width: 426px;
+    max-width: 428px;
   }
   .section-one {
     background-image: linear-gradient(
@@ -29,11 +29,17 @@
   .mob-contacts-link:is(:hover, :focus) {
     font-size: 36px;
   }
+
+  .modal {
+    top: 96px;
+    width: 365px;
+    padding: 72px 16px 24px 16px;
+  }
 }
 @media screen and (min-width: 768px) {
   /*--------------------------------------*/
   .container {
-    max-width: 766px;
+    max-width: 768px;
   }
 
   /*-----------------header---------------------*/
@@ -235,8 +241,9 @@
   /*--------------------Modal---------------------*/
 
   .modal {
+    top: 96px;
     width: 408px;
-    padding: 72px 24px 24px;
+    padding: 72px 24px 24px 24px;
   }
 }
 
@@ -376,5 +383,82 @@
   .form-footer {
     align-items: center;
     justify-content: center;
+  }
+  .modal {
+    top: 80px;
+  }
+}
+
+/*----------------------------------Portfolio-----------------------------------*/
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 428px;
+  }
+  .menu {
+    padding: 48px 0;
+  }
+  .menu-list {
+    margin: 0 auto;
+    margin-bottom: 48px;
+    flex-wrap: wrap;
+    max-width: 300px;
+  }
+
+  .menu-btn {
+    padding: 8px 16px;
+  }
+  .menu-btn:hover,
+  .menu-btn:focus {
+    background-color: var(--ocean);
+    color: var(--white);
+    border: 1px solid transparent;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+  .gallery-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 7688px;
+  }
+  .menu {
+    padding: 64px 0 96px 0;
+  }
+  .menu-btn {
+    padding: 12px 24px;
+  }
+
+  .image {
+    width: 356px;
+  }
+  .overflow {
+    max-width: 356px;
+  }
+  .gallery-list {
+    row-gap: 72px;
+    /* justify-content: center; */
+  }
+  .gallery-item {
+    width: calc((100% - 24px) / 2);
+  }
+}
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+  }
+
+  .gallery-item {
+    width: calc((100% - 48px) / 3);
+  }
+  .image {
+    width: 360px;
+  }
+  .overflow {
+    max-width: 360px;
   }
 }
